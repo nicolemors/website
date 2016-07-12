@@ -1,44 +1,51 @@
 ---
-title: Overview
+title: Home
+layout: blank
 order: 1
 ---
 
-<h1>{{title}}</h1>
+{{{embed "patterns.components.masthead.base"}}}
 
-<p>
-  This UI toolkit is a highly-modular design system for rapid web page
-  development. It contains different materials that can be assembled into more
-  complex page layouts. It includes working examples, code snippets and
-  documentation.
-</p>
+<div class="u-pad1 u-containProse u-spaceTop1">
+  <p class="u-textSerif u-textGrow1"><i><b>I feel like my whole existence lately is just boiled down to iterations.</b> Just one tiny step building on the last tiny step, moving towards something, I hope someday, will be great. Iterations of my work... keep learning, keep striving towards craftsmanship. Iterations of my life... always remembering I have the right to reinvent myself anytime <span class="u-textNoWrap">I need to.</span></i></p>
+  <div class="u-flex u-flexJustifyCenter">
+    <img width="60em" src="/images/divider.svg">
+  </div>
+</div>
 
-<h3>Some Pages</h3>
+<div class="u-pad1 u-containProse u-spaceBottom1">
+  <h2 class="u-textCenter u-textPink u-textFancy u-textGrow4 u-spaceBottom1 u-textSpace">Down with the King</h2>
+  <p>What it means to be a Designer working on the web today is changing. Our tools, skill sets, and the way we communicate is undergoing a metamorphosis.</p>
 
-<dl>
-  {{#with (page "colors")}}
-    <dt>
-      <a href="{{@root.baseurl}}/{{url}}">{{data.title}}</a>
-    </dt>
-    <dd class="drizzle-u-padBottom">
-      {{{data.notes}}}
-    </dd>
-  {{/with}}
+  <p class="u-spaceTop1 u-spaceBottom1">Our main go-to-tool for web design has been the Design Comp. It has served as our King of design communication. But what is the role of this King when the very foundation of what we are communicating is changing so rapidly?</p>
 
-  {{#with (page "docs/index")}}
-    <dt>
-      <a href="{{@root.baseurl}}/{{url}}">{{data.title}}</a>
-    </dt>
-    <dd class="drizzle-u-padBottom">
-      {{{data.notes}}}
-    </dd>
-  {{/with}}
+  <div class="u-flex u-flexJustifyCenter">
+    {{#embed "patterns.components.button.base" class="Button--secondary"}}
+      {{#content "content"}}
+        <a class="u-linkEnter" href="/pages/king.html">Read Article</a>
+      {{/content}}
+    {{/embed}}
+  </div>
+</div>
+<div class="u-bgGreyLight u-pad1">
+  <div class="Grid Grid--alignCenter u-containProse">
+    <div class="Grid-Cell u-md-size1of4">
+      <img src="/images/hfo-mark.svg">
+    </div>
+    <div class="Grid-Cell u-md-size3of4">
+      <h2 class="u-textSerif u-spaceTop1 u-spaceBottom1"><i>Every designer lives for the opportunity to redesign a brand.</i></h2>
 
-  {{#with (page "demos/index")}}
-    <dt>
-      <a href="{{@root.baseurl}}/{{url}}">{{data.title}}</a>
-    </dt>
-    <dd class="drizzle-u-padBottom">
-      {{{data.notes}}}
-    </dd>
-  {{/with}}
-</dl>
+      <p>I was given just that opportunity for HFO, a local commercial real estate brokerage firm here in Portland.</p>
+      <p class="u-padBottom1"><a href="#">Checkout the project</a></p>
+    </div>
+  </div>
+</div>
+<a class="u-linkEnter" href="#">
+  <div class="Kungfu u-bgBlack">
+    <div class="u-containProse u-textCenter">
+      <h2 class="u-textWhite u-textSerif u-textSpace u-textUppercase u-textGrow4 u-spaceLeft3">Kungfu</h2>
+      <p class="u-textPink u-textSerif"><i>The Underdog, the Journey and the Self-Discipline.</i></p>
+    </div>
+  </div>
+</a>
+{{{embed "patterns.components.footer.base"}}}
