@@ -1,0 +1,193 @@
+@import "suitcss-components-button";
+
+/**
+ * Button
+ *
+ * Based on SUIT CSS button component, but with visual deviations so that the
+ * defaults are more useful for cloudfour.com.
+ *
+ * See: https://github.com/suitcss/components-button
+ */
+
+:root {
+  --Button-border-color: var(--color-relative);
+  --Button-border-width: var(--control-stroke);
+  --Button-disabled-opacity: var(--control-disabled-opacity);
+  --Button-letter-spacing: .2em;
+  --Button-padding: 0.5em 1em;
+  --Button-transition-duration: var(--motion-duration-lg);
+  --Button-transition-property: background-color, border-color, color;
+  --Button-transition-timing-function: var(--motion-timing-function-default);
+}
+
+/**
+ * 1. Normalize `box-sizing` across all elements that this component could be
+ *    applied to.
+ * 2. Inherit font styles from ancestor.
+ * 3. Set font weight to semibold.
+ * 4. Normalize `line-height`. For `input`, it can't be changed from `normal` in
+ *    Firefox 4+.
+ * 5. Make sure `input` will wrap text across multiple lines.
+ * 6. Prevent button text from being selectable.
+ * 7. Corrects inability to style clickable `input` types in iOS.
+ */
+.Button {
+  display: inline-block;
+  box-sizing: border-box; /* 1 */
+  padding: var(--Button-padding);
+  font: inherit; /* 2 */
+  letter-spacing: var(--Button-letter-spacing);
+  line-height: normal; /* 4 */
+  white-space: normal; /* 5 */
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  border-width: var(--Button-border-width);
+  border-style: solid;
+  border-color: var(--Button-border-color);
+  background: transparent;
+  transition-duration: var(--Button-transition-duration);
+  transition-property: var(--Button-transition-property);
+  transition-timing-function: var(--Button-transition-timing-function);
+  cursor: pointer;
+  user-select: none; /* 6 */
+
+  -webkit-appearance: none; /* 7 */
+}
+
+/**
+ * Remove excess padding and border in Firefox 4+
+ */
+
+.Button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+/**
+ * Work around a Firefox/IE bug where the transparent `button` background
+ * results in a loss of the default `button` focus styles.
+ */
+
+.Button:focus {
+  outline: 1px dotted;
+  outline: 5px auto -webkit-focus-ring-color;
+}
+
+/**
+ * UI states
+ */
+
+.Button:matches(:--enter, :active) {
+  text-decoration: none;
+}
+
+.Button:matches(:disabled, .is-disabled) {
+  opacity: var(--Button-disabled-opacity);
+  cursor: default;
+}
+
+/**
+ * Modifier: default buttons
+ */
+
+:root {
+  --Button-default-background-color: var(--pink);
+  --Button-default-color: var(--color-white);
+}
+
+.Button--default,
+.Button--default:matches(:--enter, :active),
+.Button--defaultDark,
+.Button--defaultDark:matches(:--enter, :active) {
+  color: var(--Button-default-color);
+  border-color: color(var(--Button-default-background-color) shade(10%));
+  background-color: var(--Button-default-background-color);
+}
+
+.Button--defaultDark,
+.Button--defaultDark:matches(:--enter, :active) {
+  border-color: color(var(--Button-default-background-color) l(+10%));
+}
+
+.Button--default:matches(:--enter),
+.Button--defaultDark:matches(:--enter) {
+  border-color: color(var(--Button-default-background-color) shade(5%));
+  background-color: color(var(--Button-default-background-color) l(+5%));
+}
+
+.Button--defaultDark:matches(:--enter) {
+  border-color: color(var(--Button-default-background-color) l(+20%));
+}
+
+.Button--default:active,
+.Button--defaultDark:active {
+  background-color: color(var(--Button-default-background-color) shade(10%));
+}
+
+/**
+ * Modifier: primary buttons
+ */
+
+:root {
+  --Button-primary-background-color: var(--pink);
+  --Button-primary-color: var(--color-white);
+  --Button-primaryDark-background-color: color(var(--almost-black) l(+30%));
+}
+
+.Button--primary,
+.Button--primary:matches(:--enter, :active) {
+  color: var(--Button-primary-color);
+  border-color: color(var(--Button-primary-background-color) shade(10%));
+  background-color: var(--Button-primary-background-color);
+}
+
+.Button--primary:matches(:--enter) {
+  border-color: color(var(--Button-primary-background-color) shade(5%));
+  background-color: color(var(--Button-primary-background-color) l(+5%));
+}
+
+.Button--primary:active {
+  background-color: color(var(--Button-primary-background-color) shade(10%));
+}
+
+.Button--primaryDark,
+.Button--primaryDark:matches(:--enter, :active) {
+  background: var(--Button-primaryDark-background-color);
+  color: var(--Button-primary-color);
+  border-color: color(var(--Button-primaryDark-background-color) shade(10%));
+}
+
+.Button--primaryDark:matches(:--enter) {
+  border-color: color(var(--Button-primaryDark-background-color) shade(5%));
+  background-color: color(var(--Button-primaryDark-background-color) l(+5%));
+}
+
+.Button--primaryDark:active {
+  background-color: color(var(--Button-primaryDark-background-color) shade(10%));
+}
+
+/**
+ * Modifier: secondary buttons
+ */
+
+:root {
+  --Button-secondary-background-color: transparent;
+  --Button-secondary-color: var(--pink);
+}
+
+.Button--secondary,
+.Button--secondary:matches(:--enter, :active) {
+  color: var(--Button-secondary-color);
+  border-color: var(--Button-secondary-color;
+  background-color: var(--Button-secondary-background-color);
+}
+
+.Button--secondary:matches(:--enter) {
+  border-color: color(var(--Button-secondary-color) shade(5%));
+  background-color: color(var(--Button-secondary-color) l(+5%));
+}
+
+.Button--secondary:active {
+  background-color: var(--Button-secondary-color) shade(10%));
+}

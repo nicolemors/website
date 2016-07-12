@@ -1,0 +1,19 @@
+primary:
+  - color: "#DFB9C4"
+    property: "--pink-light"
+  - color: "#CC5381"
+    property: "--pink"
+  - color: "#CA3167"
+    property: "--pink-bright"
+  - color: "#441C18"
+    property: "--brown"
+
+grays:
+  - color: "#000000"
+    property: "--almost-black"
+  - color: "#4A4A4A"
+    property: "--grey-dark"
+  - color: "#9A9999"
+    property: "--grey"
+  - color: "#E6E3E3"
+    property: "--grey-light"

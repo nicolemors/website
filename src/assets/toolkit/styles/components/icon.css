@@ -1,0 +1,27 @@
+/** @define Icon */
+
+:root {
+  --Icon-line-height-offset: calc((var(--line-height-md) - 1) / -2em);
+  --Icon-size: 1em;
+  --Icon-size-lg: calc(var(--Icon-size) * var(--ms-ratio));
+}
+
+/**
+ * 1. Because vertical alignment is funny, icons always appear about a pixel too
+ *    low when they're the same height as the current `font-size`. Using `top`
+ *    frees up `margin-top` for adjustments we'll be applying to modifiers.
+ * 2. Base dimensions on the current `font-size` for leaner adjustments.
+ * 3. Fill with the current text color by default. May be overridden by icon
+ *    asset SVG attributes.
+ */
+.Icon {
+  position: relative;
+  top: -1px; /* 1 */
+  margin: 0;
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  font-size: var(--Icon-size); /* 2 */
+  vertical-align: middle;
+  fill: currentColor; /* 3 */
+}

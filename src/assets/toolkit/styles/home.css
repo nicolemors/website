@@ -1,0 +1,76 @@
+.Navigation--link {
+  font-family: var(--fancy);
+  color: var(--color-white);
+  text-decoration: none;
+  font-size: 1.55rem;
+  font-style: italic;
+  letter-spacing: 0.625rem;
+  padding-right: .3em;
+}
+
+.Navigation-words {
+  background-color: var(--grey-dark);
+  text-align: right;
+  padding: .8em 0 1em .3em;
+}
+
+.Navigation-work {
+  background-color: var(--pink);
+  padding: .8em 0 1em .8em;
+  border-left: solid var(--white);
+}
+
+
+@media (--md-viewport) {
+  .Navigation--intro-link {
+    font-size: 2.25rem;
+    padding-right: .3em;
+  }
+  .Navigation--intro-words {
+    padding-left: .8em;
+  }
+}
+
+@media (--lg-viewport) {
+  .Navigation--intro-link {
+    font-size: 4.5rem;
+  }
+  .Navigation--intro-words {
+    text-align: center;
+  }
+  .Navigation--intro-work {
+    border-left: solid 8px var(--white);
+    text-align: center;
+  }
+}
+
+.Words-tease-hfo {
+  background-color: var(--grey-light);
+  text-align: center;
+}
+
+.Words-tease-hfo-header {
+  font-family: var(--serif);
+  font-style: italic;
+  font-size: var(--font-size-md);
+  color: var(--grey-dark);
+  font-weight: 400;
+  letter-spacing: 0.0625rem;
+  text-transform: none;
+}
+
+.Words-tease-hfo-subheader {
+  font-size: var(--font-size-sm);
+  font-weight: normal;
+}
+
+.Words-tease-hfo-image {
+  width: 50%;
+}
+
+@media (--md-viewport) {
+  .Words-tease-hfo-image {
+    float: right;
+  }
+}
+

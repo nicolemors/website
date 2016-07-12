@@ -1,0 +1,39 @@
+.u-bgBlack {
+  background-color: var(--color-black);
+}
+
+.u-bgWhite {
+  background-color: var(--color-white);
+}
+
+.u-bgPinkLight {
+  background-color: var(--pink-light);
+}
+
+.u-bgPink {
+  background-color: var(--pink);
+}
+
+.u-bgBrown {
+  background-color: var(--brown);
+}
+
+.u-bgAlmostBlack {
+  background-color: var(--almost-black);
+}
+
+.u-bgGreyDark {
+  background-color: var(--grey-dark);
+}
+
+.u-bgGrey {
+  background-color: var(--grey);
+}
+
+.u-bgGreyLight {
+  background-color: var(--grey-light);
+}
+
+.u-bgPinkBright {
+  background-color: var(--pink-bright);
+}

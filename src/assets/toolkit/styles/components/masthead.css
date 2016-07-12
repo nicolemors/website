@@ -1,0 +1,65 @@
+/* Masthead Styles
+   ========================================================================== */
+
+.Masthead-title {
+  font-family: var(--serif);
+  font-size: 3rem;
+  color: var(--almost-black);
+  text-transform: none;
+  letter-spacing: normal;
+  text-align: center;
+  margin: .2em;
+}
+
+.Masthead--intro-title {
+  font-size: 4rem;
+}
+
+.Masthead-titleLink {
+  color: var(--almost-black);
+  text-decoration: none;
+}
+
+.Masthead-signature {
+  font-family: var(--serif);
+  font-style: italic;
+  font-weight: 400;
+  font-size: 2.25rem;
+  text-align: center;
+  margin: 0 0 1em 0;
+}
+
+.Masthead-introduction {
+  font-family: var(--serif);
+  font-style: italic;
+  font-weight: 400;
+  line-height: 2;
+  margin-bottom: 2em;
+}
+
+@media (--md-viewport) {
+  .Masthead-title {
+    text-align: right;
+    margin: 0;
+    padding-top: 10%;
+  }
+  .Masthead--intro-title {
+    font-size: 4.5rem;
+    text-align: center;
+  }
+  .Masthead-signature {
+    text-align: left;
+    margin: 0;
+    padding-top: 12%;
+  }
+  .Masthead--intro-signature {
+    margin: 0 0 3.75rem 0;
+    text-align: center;
+    padding-top: 0;
+  }
+  .Masthead-introduction {
+    font-size: 1.25rem;
+    line-height: 2.375rem;
+    margin-bottom: 3.75rem
+  }
+}

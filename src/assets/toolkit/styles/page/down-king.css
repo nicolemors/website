@@ -1,0 +1,156 @@
+/* Down with the King - Art Directed styles
+   ========================================================================== */
+
+/* Tease styles */
+
+.Words-tease-death {
+  padding-bottom: 2em;
+}
+
+.Words-tease-death-header {
+  text-align: center;
+  font-family: var(--fancy);
+  font-style: italic;
+  font-size: 3rem;
+  letter-spacing: 1.25rem;
+  font-weight: normal;
+  margin-top: var(--space-extralarge);
+}
+
+.Words-tease-death-CTA {
+  margin-bottom: 3em;
+}
+
+/* Get Mobile Callout */
+
+.Words-death-Mobilecallout {
+  background-color: var(--grey-light);
+}
+
+.Words-death-Mobilecallout-title, .Words-death-Mobilecallout-subtitle {
+  text-transform: uppercase;
+  font-weight: 300;
+  font-size: 4rem;
+  letter-spacing: 0.375rem;
+  padding-top: 1em;
+  margin: 0;
+}
+
+.Words-death-Mobilecallout-subtitle {
+  color: var(--almost-black);
+  font-weight: 700;
+  padding-top: 0;
+}
+
+.Words-death-Mobilecallout-devices {
+  margin: 0 auto;
+  width: 45%;
+  padding-bottom: 3em;
+}
+
+@media (--sm-viewport-max) {
+  .Words-death-Mobilecallout-title {
+    font-size: 2em;
+    letter-spacing: .2rem;
+  }
+  .Words-death-Mobilecallout-subtitle {
+    line-height: 1em;
+  }
+  .Words-death-Mobilecallout-devices {
+    width: 95%;
+    padding-bottom: 1em;
+  }
+}
+
+/* Flat Picture Callout */
+
+.Words-death-Flatcallout {
+  background-color: var(--grey-dark);
+}
+
+.Words-death-Flatcallout-title {
+  margin: 0;
+  padding-top: .5em;
+  font-size: 3.6em;
+}
+
+.Words-death-Flatcallout-subtitle {
+  color: var(--white);
+  font-weight: 300;
+  font-size: 2.6rem;
+  margin: 0;
+  padding: .2em 0;
+}
+
+.Words-death-Flatcallout-picture {
+  width: 90%;
+  margin-bottom: -10em;
+}
+
+.Words-death-Flatcallout-outside {
+  margin-top: 8em;
+}
+
+@media (--sm-viewport-max) { 
+  .Words-death-Flatcallout-title {
+    letter-spacing: 1rem;
+  }
+  .Words-death-Flatcallout-subtitle {
+    font-size: 2rem;
+    margin-top: .5em;
+  }
+}
+
+@media (--md-viewport) {
+  .Words-death-Flatcallout-title {
+    padding-top: 1em;
+  }
+  .Words-death-Flatcallout-picture {
+    width: 30%;
+  }
+}
+
+/* King and Screen Picture Callout */
+
+@media (--md-viewport) {
+  .Words-death-kingCallout-animation {
+    width: 70%;
+  }
+}
+
+.Words-death-Kingcallout {
+  background-color: var(--pink-bright);
+}
+
+.Words-death-Kingcallout-subtitle {
+  margin-top: -.2em;
+  font-size: 2em;
+  padding-bottom: 1em;
+}
+
+/* References */
+
+.Words-death-references {
+  background-color: var(--pink-light);
+  font-family: var(--serif);
+}
+
+.Words-death-references-title {
+  font-size: 3em;
+  color: var(--white);
+  margin: 0;
+}
+
+.Words-death-references-list {
+  list-style: none;
+  line-height: 2em;
+  padding: 0;
+}
+
+.Words-death-references-link {
+  text-decoration: none;
+}
+
+.Words-death-references-link:hover {
+  color: var(--almost-black);
+}

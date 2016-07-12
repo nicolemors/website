@@ -1,0 +1,175 @@
+---
+title: Down with the King
+layout: blank
+---
+
+{{{embed "patterns.components.masthead.base"}}}
+
+<div class="u-pad1 u-containProse u-spaceTop1 u-spaceItems1">
+  <h1 class="u-textPink u-textUppercase u-textSpaceSm u-textLight u-textGrow4">Down with the King</h1>
+  <h2><strong>Death of the Design Comp</strong></h2>
+  <p class="u-textGrow2 u-spaceTop1">I originally gave this talk during Design Week, when preparing for that talk with my coworkers and design friends, I felt like these topics and the idea of changing ingrained design processes can get a little heated… I am not trying to be dogmatic, these are my observations being on the ground and trying to work in our current web landscape.</p>
+
+  <p>Many of these ideas aren't even mine, smart people have been talking about some of this stuff for awhile now. I want to open the dialog and see if there can't just be a better way. Here is a quick history of the comp and an overview of how we use comps today in our work flow. I am going to share some alternate tools and processes to the comp.</p>
+  <figure class="Figure">
+    <img src="/images/printingpress.jpg">
+  </figure>
+  <p>A design comp (short for comprehensive) historically in print terms was a sample that the printer would print out to get a signature on. It was proof, for the printer to get sign off on saying that everything was correct before moving into print production.</p>
+
+  <p>This insured that the person signing off knows exactly how all of the elements on the page were going to come out on the final print. This would be the same for 100 prints or 10,000 prints.</p>
+
+  <p>Because we (designers of the web variety) had no other point of reference, when we needed an approval process, we carried this same process over and applied this concept of the “proof” to the web.</p>
+
+  <div class="u-release u-bgGreyLight u-textCenter u-padEnds4">
+    <h3 class="u-textPink u-textUppercase u-textSpaceSm u-textGrow2 u-md-textGrow6 u-textLight">Get Complicated</h3>
+    <h3 class="u-textBold u-textUppercase u-textSpaceSm u-textGrow2 u-md-textGrow5">Get Mobile</h3>
+    <img width="300em" src="/images/devices.svg">
+  </div>
+
+  <p>Most people approach mobile like this. Phone, tablet and desktop. We use techniques such as breakpoints and optimize our designs for these sizes.</p>
+
+  <p>So what does that mean for pixel pushing? Well lets do the math. Pre-mobile, you did a comp for each page. When comping out for different size viewports you create comps for each page along with a comp for each viewport. So lets say you start mobile first, each comp takes you 10 hours, then you do one for tablet, and desktop, and this you would do for each page you would like to get “sign off” for from the client.</p>
+
+  <p>Who knows what the future holds, you can see where this process is no longer sustainable, even our current phone, tablet, desktop is stretch, but if you start expounding that out, you get the point. You can see where that adds up. It is time consuming. It is unsustainable.</p>
+
+  <p class="u-textBold">After all those hours and hours of pixel pushing what do we have after all of our efforts, we have a nice picture of a digital thing. A flat picture, lacking all interaction and experience.</p>
+
+  <div class="u-release u-bgGreyDark u-textCenter u-padEnds4">
+    <h3 class="u-textFancy u-textUppercase u-textSpaceSm u-textPinkLight u-textGrow3 u-md-textGrow6">A nice picture</h3>
+    <h2 class="u-textWhite u-textLight u-textGrow3 u-md-textGrow4">of a digital thing</h2>
+    <img width="300em" src="/images/nice-picture.png">
+  </div>
+
+  <p class="u-textBold u-textPinkBright u-textGrow2">A picture is worth 1,000 words, but what about 1,000 interactions?</p>
+  <p class="u-textGrow2">Instead of hanging this picture on a wall where it belongs, we use this comp, or picture towards two main goals.</p>
+  <ol>
+    <li class="u-padBottom1"><h4 class="u-textBold u-textPink">Communication with Clients and Stakeholders</h4>
+    <p>It gives us a way to help clients visualize the final product. It also gives us a milestone or sign off similar to print, the BIG difference is at this point our comp isn't going to print production, we aren't printing this picture. It's going into development, which is our second goal of the comp. </p>
+    </li>
+    <li><h4 class="u-textBold u-textPink">Design Specs for Developers</h4>
+    <p>The comp provides documentation of specs for design. At best, the comp is meant to be a road map for developers, and I say at best because developers usually get it wrong.</p>
+    </li>
+  </ol>
+  <p class="u-textBold">But it's not their fault.</p>
+
+  <p>Not trying to say all designers are control freaks but, the comp gives us this sense of illusionary control because use rely on this picture. I have heard on more than a few occasions, even the best designer use the words “pixel perfection”.</p>
+
+  <p class="u-textBold">The comp gives us as designers a false sense of control where there is none.</p>
+
+  <p>The truth is, unlike print, the comp is never an exact representation of how the design will be rendered in the browser. Period. And that design will be rendered differently in every browser.</p>
+
+  <p class="u-textBold">Comp = comprehensive = lie.</p>
+
+  <p>It's not comprehensive at all. It lacks all interaction. It's flat, it's a picture of website.</p>
+
+  <p>People love analogies, so here is one, just to illustrate our dilemma. It's a story about a different kind of king… an Emperor. So just a refresher if it's been a while… the story goes like this:</p>
+
+  <blockquote>
+    <p class="u-textSerif"><i>There is a vain Emperor and all he cares about is wearing the freshest clothes, so he hires these two guys to make him the best, most magnificent clothes. There's a problem tho, these dudes are swindlers. And they promise the emperor they can make him an awesome outfit out of a special fabric. However this special fabric is invisible if you happen to be hopelessly stupid or unfit for your position. The Emperor, says to himself, well I am not stupid or unfit, nor do I have anyone like that working for me, ya know what, lets do it. So the swindlers get started and just to be safe the Emperor sends his top guys to check on his clothes… he sends his Ministers. They unfortunately do not see the fabric, but for fear of seeming unfit, they lie to the king. When the Emperor's new clothes are finished he Marches in procession before his subjects. EVERYONE pretends to see his clothes, no one says a word. Except. One little kid. This kid calls the Emperor out, “he has no clothes on”. “The Emperor, is naked. He doesn't care about looking stupid and he has no fear of look incompetent. He is just calling it like he sees it.</i></p>
+  </blockquote>
+
+  <p>Let's swap out some of the characters and apply this story directly to our problem… Designers are the Swindlers, Comps are the Cloth and well… the Client is the Emperor.</p>
+
+  <blockquote>
+    <p>A well intentioned client who only cares about having the best website, hires a designer. That designer promises to create a comp and tells that client that only people who are hopelessly shortsighted will not be able to imagine the interaction and layout across browsers. All of the clients stakeholders and decision makers pretend to see the interaction and how the the works on all the devices for fear of appearing unfit for their position, and the client does the same. Finally after many comps are made to the client's illusionary satisfaction.</p>
+  </blockquote>
+
+  <p>Can anyone guess who the kid is? The comp is passed off the the developer. The developer is the only one that doesn't pretend to see the imaginary interaction. The developer is the kid.</p>
+
+  <p>Yes, I have taken huge literary license with my version of the Emperor's New Clothes, but the takeaway here is that what we as designers need to be in reality is not the swindlers, but we need to be the voice of the child, because when sight becomes insight, it prompts actions. When we stop peddling our pictures of websites, and start calling it like we see it. A comp leaves everyone involved, naked.</p>
+
+  <h3 class="u-textGrow2 u-textUppercase u-textPinkBright">The King & the Screen: <span class="u-textBold u-block">a match not made in heaven</span></h3>
+
+  <p>The king and the screen are not an ideal match. We borrowed this solution from print but it never was quite right, and our mobile landscape is only making this more evident. It's like taking your cousin to the prom, people won't know you are related unless you tell them, however, it just not quite right.</p>
+
+  <h2 class="u-textGrow2 u-textBold u-textPinkBright">Now What?</h2>
+
+  <h2 class="u-textGrow2 u-textBold">We need to change our vernacular.</h2>
+
+  <p class="u-textBold">O.K. but what are our deliverables? Discussions are nice, but what do you sell?<p>
+
+  <p>For our sake, we are going to assume you have done all of the good upfront work, you have kicked off your project with the client, you have asked questions and have identified theme and similarities from those answers. You understand the site's content and priorities. You have all of the research done and a creative brief in hand to start the visual design process, this is the point where you would go into photoshop and start pushing pixels.</p>
+
+  <h3 class="u-textBold u-textPink">Style Tiles</h3>
+
+  <p>Style tiles were developed by a designer, <a href="#">Samantha Warren</a>, they are a visual web design process for communicating the essence of a visual brand for the web.</p>
+
+  <p>It contains visual elements such as fonts, colors, and interface elements that are meant to show a client how a design feels. What you don't see is content, viewport, layout, because those things are variable. You only see the elements that are core to the visual design.</p>
+
+  <figure class="Figure">
+    <img src="/images/styletile.png">
+  </figure>
+
+  <p>This gives you feedback you need… about design. Have you ever presented a comp of lets say a homepage, and instead of seeing your design… the monochromatic color scheme you used with bright pops of hot pink, the flat design aesthetic paired with texture of lace to create a sense of contrast, and the careful consideration you used when pairing serif and sans-serif typefaces… instead of seeing all that, instead of seeing the design, they say to you… “where is my about page link?” Instead of showing exactly where every element is going to be places on the page, in a certain dimension, style tiles show just the interface options so that you can zero in on the clients preferences for design.</p>
+
+  <p>Another benefit to using style tiles is that they are incredibly easy to iterate. How many of you comped out a website, presented to the client, only hear something along the lines of “I hate the color blue”, when blue is a prominent color in your palette. Then having to go in and change that in every comp to represent to the client. When working with style tiles, you can very easily implement changes without having to spend the time to update multiple comp files which is a huge time saver.</p>
+
+  <h3 class="u-textBold u-textPink">Element Collages</h3>
+
+  <p>Element Collages are similar to Style Tiles in the sense that you are only showing things such as fonts, color, and interface elements, however it more of a freestyle photoshop canvas that contains a collection of elements you are feeling good about. Maybe there are a few different options for each element. This is then used for getting feedback from the client. It's not really changing what we do already, many designers start this way anyway, it's more about involving the client in the process sooner, getting critique instead of a signoff.</p>
+
+  <h3 class="u-textBold u-textPink">Style Guide</h3>
+
+  <p>Both Style Tiles and element collages at their core, are about creating a design baseline. If you need to compile all of your learnings and designed components into a deliverable, creating a style guide or pattern library is a great tool, for both the client and the developer. A style guide is a document which details all the various elements and modules. It contains things like color palette, and typography. It would contain objects and components like buttons, call-out boxes, forms, icons, etc. A style guide would also document various interactivity, things such as dropdowns, modals, or tooltips.</p>
+
+  <p class="u-textGrow2">This is the point where things get divisive. Web designers who code, and those who don't.<p>
+
+  <p class="u-textBold">Learn your medium, learn to code</p>
+
+  <p>As designers who create things for a specific medium, the web. I feel that we should all should have at the least a basic working knowledge of presentational HTML + CSS, the languages that display our styles and designs. To what extent of knowledge is up to each designer separately, but it should be at least to the extent you can work collaboratively with developers, and communicate your design. If you as a designer have a functional knowledge of HTML and CSS, you can create your Style Guides and frontend styles in code. There are many resources for designers learning to code, <a href="#">Treehouse is great.</a></p>
+
+  <h3 class="u-textBold u-textPink">Prototypes and Functional Wireframes</h3>
+
+  <p>These guys show interaction, layout, UX, content hierarchy, and viewport. Once you have the coded out wireframe in a good place, you can begin to take your Style Tile, Element Collage, or Style Guide and begin to layer in the visual baseline you created. Because you have included your client in the process up through this point, none of what they see should be a reveal, and what they are now interacting with, is a prototype in the actual medium in which it will live, the browser. And you will be applying your time and efforts towards work that will be used in the actual product, a website, instead of hours spent in photoshop creating pictures.</p>
+
+  <p>If you are a designer that doesn't code let's assume you are working closely with a developer. This means working collaboratively with our development counterparts, not just handing over .psd's. You can create flat wireframes and put them into a tool such as <a href="#">InVision</a> so you can show a little of how that experience flows. Or just sketch out your ideas and open the dialog between you and your developer.</p>
+
+  <figure class="Figure">
+    <img src="/images/sketch.png">
+  </figure>
+
+  <h2>Revisiting Our Goals</h2>
+
+  <p>Let's revisit our two main goals from earlier. Only this time lets use our comp alternatives to serve those goals.</p>
+
+  <h3 class="u-textPink u-textBold">First, for clients.</h3>
+
+  <p>Instead of having to imagine the function and interaction, we can facilitate discussion and build prototypes, utilizing our design baselines. They will experience their design in the browser where their website will live, instead of just looking at a picture of their site.</p>
+
+  <h3 class="u-textPink u-textBold">Second, for developers.</h3>
+
+  <p>We are bridging the gap, no longer can we rely so heavily on the comp as a map to communicate our intentions and assumptions. We have to work side by side with developers. Or, embrace our medium and learn to bring our designs into the browser ourselves by coding.</p>
+
+  <p class="u-textBold">We need to educate our clients.</p>
+
+  <p>One of the biggest objections to changing our design processes and deliverables is how to explain all of this to our clients. I think that explanation varies from client to client, depending on the type of client you are working with. Some are more rooted in traditional comp workflows and will need more education and coaching.</p>
+
+  <p>Mike Montiero is a Design Director <a href="#">@Mule</a>, he wrote <a href="#"><i>“Design is a Job”</i></a>, I highly recommend it to any working designer or those who work in the business of design. In his book, he says,</p>
+
+  <blockquote>
+    <p>It's your job as a designer, and a communication professional, to find the right language to communicate with your client. When you say a client doesn't “get it” you might as well be saying, “I couldn't figure out how to get my point across. I am a lazy designer. Please take all my clients from me.</p>
+    <footer><cite>Mike Montiero</cite></footer>
+  </blockquote>
+
+  <h2 class="u-textBold u-textPink">Trust is at the core of change.</h2>
+
+  <p>Regardless of what process your clients are familiar with, the key is trust. If you have done the work to really set up and kick off your project right, you will establish that trust from the beginning. The rest is really continuing to build that trust along the process.</p>
+
+  <p>The comp has had a long reign as our singular means of communication. For some projects it might be the best solution, for many it might not be at all. The landscape of our medium is changing everyday and that's what makes it so compelling and exciting to be working in our industry today. I hope some of the concepts and tools will be useful in your next project or help your workflow.</p>
+
+  <div class="u-release u-bgPinkLight u-textCenter u-pad1">
+    <h2 class="u-textWhite u-textBold u-textSerif u-spaceBottom1"><i>Resources & References</i></h2>
+    <ul class="u-spaceItems01">
+      <li><a href="#">Down with the King</a></li>
+      <li><a href="#">Style Tiles</a></li>
+      <li><a href="#">Element Collages</a></li>
+      <li><a href="#">Responsive Comping</a></li>
+      <li><a href="#">Style Guides</a></li>
+      <li><a href="#">Typecast</a></li>
+      <li><a href="#">TreeHouse</a></li>
+      <li><a href="#">Design is a Job</a></li>
+    </ul>
+  </div>
+</div>
+
+{{{embed "patterns.components.footer.base"}}}

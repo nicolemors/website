@@ -1,0 +1,237 @@
+/**
+ * Increase root font-size a little more for large screens.
+ */
+
+@media (--lg-viewport) {
+  html {
+    font-size: calc(var(--ms1) * 1rem);
+  }
+}
+
+/**
+ * Body type styles
+ *
+ * 1. Base font style for everything
+ * 2. Allow long words (links) to brake at arbitrary points
+ * 3. Auto-hyphens by default (assuming removal for specific elements)
+ * 4. Prevent automatic size adjustments on orientation change
+ */
+
+body {
+  font: var(--base-font); /* 1 */
+  word-wrap: break-word; /* 2 */
+  hyphens: auto; /* 3 */
+  text-size-adjust: none; /* 4 */
+}
+
+/**
+ * Headings
+ */
+
+:--headings {
+  font: var(--sans-serif);
+}
+
+/**
+ * Largest and smallest default heading sizes
+ */
+
+h1 {
+  font-size: var(--font-size-lg);
+  font-weight: var(--font-weight-normal);
+  line-height: var(--line-height-sm);
+}
+
+h2 {
+  font-size: var(--font-size-md);
+  line-height: var(--line-height-sm);
+  font-weight: var(--font-weight-normal);
+}
+
+h5,
+h6 {
+  font-size: var(--font-size-xs);
+  font-weight: var(--font-weight-normal);
+}
+
+/**
+ * Responsive heading size increases
+ */
+
+@media (--md-viewport) {
+  h1 {
+    font-size: var(--font-size-xl);
+  }
+
+  h2 {
+    font-size: var(--font-size-lg);
+  }
+
+  h3 {
+    font-size: var(--font-size-md);
+    line-height: var(--line-height-sm);
+  }
+}
+
+/**
+ * Links
+ */
+
+a {
+  text-decoration: underline;
+  color: var(--link-color);
+}
+
+a:matches(:active, :focus, :hover) {
+  color: var(--link-hover-color);
+}
+
+/**
+ * Small text
+ */
+
+small {
+  font-size: var(--font-size-xs);
+}
+
+/**
+ * Small caps
+ * http://typeplate.com/#small-caps
+ */
+
+abbr {
+  font-variant: small-caps;
+  text-transform: lowercase;
+}
+
+/**
+ * Remove hyphenation from elements with significant formatting
+ */
+
+abbr,
+acronym,
+blockquote,
+code,
+kbd,
+q,
+samp,
+var {
+  hyphens: none;
+}
+
+/**
+ * Use custom monospace font on all code-like elements
+ */
+
+:--monospaced {
+  font: var(--sans-serif);
+}
+
+/**
+ * Control whitespace and wrapping on code blocks
+ */
+
+pre,
+code {
+  white-space: pre;
+}
+
+code {
+  word-wrap: normal;
+}
+
+pre > code {
+  white-space: pre-wrap;
+}
+
+/**
+ * Lists
+ */
+
+:--lists {
+  list-style-position: outside;
+}
+
+ol,
+ul {
+  padding: 0 0 0 var(--space-md);
+}
+
+ul {
+  list-style-type: var(--list-style-default);
+}
+
+li {
+  list-style-type: none;
+}
+
+ol {
+  list-style-type: none;
+}
+
+ol li {
+  counter-increment: item;
+}
+
+ol li:before {
+  content: counter(item);
+  font-weight: var(--font-weight-semibold);
+  color: var(--pink);
+  float: left;
+  margin-left: -1rem;
+}
+
+/**
+ * Horizontal rule
+ */
+
+hr {
+  height: var(--border-width-md);
+  min-height: var(--border-width-sm);
+  border-style: none;
+  background-color: var(--color-relative);
+  opacity: var(--opacity-lower);
+}
+
+/**
+ * Blockquote
+ *
+ * Assumes markup to be:
+ *
+ * <blockquote>
+ *   <p>The movie was awesome</p>
+ *   <footer>
+ *     <cite>Some Person</cite>
+ *   </footer>
+ * </blockquote>
+ *
+ * http://html5doctor.com/cite-and-blockquote-reloaded/
+ */
+
+blockquote {
+  padding-left: var(--space-md);
+  font-style: italic;
+  border-left-width: var(--border-width-md);
+  border-left-style: solid;
+  border-color: var(--pink-light);
+}
+
+blockquote p {
+  margin-bottom: var(--base-margin);
+}
+
+blockquote :matches(p:last-of-type, footer) {
+  display: inline;
+}
+
+blockquote cite {
+  font-style: normal;
+}
+
+/**
+ * Precede citation with em dash and non-breaking space.
+ */
+
+blockquote cite::before {
+  content: "—\00a0";
+}

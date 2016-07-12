@@ -1,0 +1,229 @@
+@use postcss-mixins;
+@use postcss-cssnext;
+@use postcss-inline-svg;
+
+
+@import "css-modularscale";
+
+/**
+ * Misc
+ */
+
+:root {
+  /* http://www.modularscale.com/?1&em&1.25&web&text */
+  --ms-ratio: var(--major-third);
+  --ms-base: 1;
+}
+
+/**
+ * Typography
+ */
+
+:root {
+  --font-size-xs: calc(var(--ms-1) * 1em);
+  --font-size-sm: calc(var(--ms0) * 1em);
+  --font-size-md: calc(var(--ms1) * 1em);
+  --font-size-lg: calc(var(--ms2) * 1em);
+  --font-size-xl: calc(var(--ms3) * 1em);
+
+  --font-family-default: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  --font-family-mono: "Source Code Pro", Monaco, Consolas, "Lucida Console", "Andale Mono", monospace;
+
+  --sans-serif: 'Open Sans', helvetica, sans-serif;
+  --serif: 'Playfair Display', georgia, serif;
+  --fancy: 'Playfair Display SC', georgia, serif;
+
+  --font-weight-light: 300;
+  --font-weight-normal: 400;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
+
+  --line-height-xs: var(--ms0);
+  --line-height-sm: var(--ms1);
+  --line-height-md: var(--ms2);
+  --line-height-lg: var(--ms3);
+
+  --max-width-s: 36rem;    /* 576px  */
+  --max-width-m: 60rem;    /* 960px  */
+  --max-width-l: 87.5rem;  /* 1400px */
+}
+
+/**
+ * Links
+ */
+
+:root {
+  --link-color: var(--pink);
+  --link-hover-color: color(var(--link-color) l(+10%));
+}
+
+/**
+ * Colors
+ *
+ * Where possible, color names should map to standard webcolors.
+ * See: https://zaim.github.io/webcolors/
+ *
+ * Define variables for color usage (i.e., `--color-link`) in theme-map.
+ *
+ * For adjustments to existing colors (lightening, darkening) use the
+ * `color` function: https://github.com/postcss/postcss-color-function
+ */
+
+:root {
+  --color-black: #000;
+  --color-white: #fff;
+
+  /* primary pallet */
+  --pink-light: #DFB9C4;
+  --pink: #CC5381;
+  --brown: #441C18;
+
+  /* grey pallet */
+  --almost-black: #000000;
+  --grey-dark: #4A4A4A;
+  --grey: #9A9999;
+  --grey-light: #E6E3E3;
+  --white: #fff;
+
+  /* impact pallet */
+  --pink-bright: #CA3167;
+}
+
+/**
+ * Color Placeholders
+ *
+ * These are used as defaults in place of actual colors.
+ *
+ * 1. Represents an "absense" of color
+ * 2. Represents a current or inherited color
+ */
+
+:root {
+  --color-null: transparent; /* 1 */
+  --color-relative: currentColor; /* 2 */
+}
+
+/**
+ * Content
+ */
+
+:root {
+  --content-dash-em: "—";
+  --content-single-quote-open: "‘";
+  --content-single-quote-close: "’";
+  --content-double-quote-open: "“";
+  --content-double-quote-close: "”";
+}
+
+/**
+ * Element
+ */
+
+:root {
+  --list-style-default: disc;
+  --list-style-numeric: decimal;
+}
+
+/**
+ * Base
+ */
+
+:root {
+  --base-background: var(--color-white);
+  --base-color: var(--almost-black);
+  --base-font: var(--font-size-sm)/var(--line-height-md) var(--font-family-default);
+  --base-margin: var(--space-md);
+}
+
+/**
+ * Spacing
+ */
+
+:root {
+  --space-xs: calc(var(--ms-1) / 1rem);
+  --space-sm: calc(var(--ms0) * 1rem);
+  --space-md: calc(var(--ms1) * 1rem);
+  --space-lg: calc(var(--ms2) * 1rem);
+}
+
+/**
+ * Motion
+ */
+
+:root {
+  --motion-duration-sm: 100ms;
+  --motion-duration-md: 180ms;
+  --motion-duration-lg: 300ms;
+  --motion-timing-function-default: ease;
+}
+
+/**
+ * Border
+ */
+
+:root {
+  --border-width-sm: 1px;
+  --border-width-md: 3px;
+  --border-radius-md: 6px;
+}
+
+/**
+ * Component
+ */
+
+:root {
+  --control-stroke: var(--border-width-md);
+  --control-line: var(--border-width-sm);
+  --control-radius: var(--border-radius-md);
+  --control-color: var(--base-color);
+  --control-background-color: var(--color-null);
+  --control-border-color: var(--color-relative);
+  --control-disabled-opacity: var(--opacity-mid);
+}
+
+/**
+ * Opacity
+ */
+
+:root {
+  --opacity-lower: 0.125;
+  --opacity-low: 0.25;
+  --opacity-mid: 0.5;
+  --opacity-high: 0.75;
+}
+
+/**
+ * Shades
+ */
+
+:root {
+  --shade-lower: color(var(--color-black) alpha(0.125));
+  --shade-low: color(var(--color-black) alpha(0.25));
+  --shade-mid: color(var(--color-black) alpha(0.5));
+  --shade-high: color(var(--color-black) alpha(0.75));
+}
+
+/**
+ * Selectors
+ */
+
+@custom-selector :--headings h1, h2, h3, h4, h5, h6;
+@custom-selector :--lists ul, ol, dl;
+@custom-selector :--monospaced pre, code, kbd, samp, var;
+@custom-selector :--enter :hover, :focus;
+
+/**
+ * Breakpoints
+ */
+
+/* Width */
+@custom-media --sm-viewport (min-width: 30em);            /* 480px  */
+@custom-media --sm-viewport-max (max-width: 39.0625em);   /* 625px  */
+@custom-media --md-viewport (min-width: 39.125em);        /* 626px  */
+@custom-media --md-viewport-max (max-width: 59.9375em);   /* 959px  */
+@custom-media --lg-viewport (min-width: 60em);            /* 960px  */
+@custom-media --lg-viewport-max (max-width: 74.9375em);   /* 1199px */
+@custom-media --xl-viewport (min-width: 75em);
+
+/* Height */
+@custom-media --mdh-viewport (height >= 35em);
