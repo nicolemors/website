@@ -7,7 +7,7 @@
 
 <div class="drizzle-Layout-nav drizzle-Nav" id="nav">
   <div class="drizzle-Nav-header">
-    <a href="{{@root.baseurl}}/">
+    <a href="/pattern-library.html">
       {{> drizzle.logo}}
     </a>
     <a class="drizzle-Nav-header-toggle" href="#nav">
@@ -38,6 +38,15 @@
     <h5 class="drizzle-Nav-item drizzle-u-marginTop">Components</h5>
     <ul class="drizzle-Nav-menu">
       {{#each (collections "components" sortby="order")}}
+        <li>
+          {{> nav-item label=name}}
+        </li>
+      {{/each}}
+    </ul>
+    {{!-- Combos --}}
+    <h5 class="drizzle-Nav-item drizzle-u-marginTop">Combos</h5>
+    <ul class="drizzle-Nav-menu">
+      {{#each (collections "combos" sortby="order")}}
         <li>
           {{> nav-item label=name}}
         </li>

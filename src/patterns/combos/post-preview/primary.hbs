@@ -1,0 +1,25 @@
+---
+name: Overview
+sourceless: true
+---
+
+{{#embed "patterns.combos.post-preview.base"}}
+  {{#content "image"}}
+    <img class="u-sizeFull" src="https://media.giphy.com/media/bk8HS9MJFve5q/giphy.gif">
+  {{/content}}
+  {{#content "title"}}
+    <a class="u-textGrow2 u-linkEnter u-textBold" href="#">
+      <span class="u-textPink">Post Title</span>
+    </a>
+  {{/content}}
+  {{#content "content"}}
+    A short description or preview paragraph.
+  {{/content}}
+  {{#content "button"}}
+    {{#embed "patterns.components.button.base" class="Button--primary"}}
+        {{#content "content"}}
+          Button
+        {{/content}}
+      {{/embed}}
+  {{/content}}
+{{/embed}}

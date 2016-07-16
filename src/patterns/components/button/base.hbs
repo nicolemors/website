@@ -3,8 +3,9 @@ notes: This is the base button class.
 hidden: true
 ---
 
-<button class="Button {{class}}"{{#if disabled}} disabled{{/if}}>
+<a class="Button {{class}}" href="{{href}}" {{#if disabled}} disabled{{/if}}>
   {{#block "content"}}
     Button
   {{/block}}
-</button>
+</a>
+

@@ -4,26 +4,112 @@ layout: page
 ---
 
 <div class="u-pad1 u-containProse u-spaceTop1 u-spaceItems1">
-  <div class="Grid Grid--withGutter">
-    <div class="Grid-cell u-sm-size1of3">
+  <p class="u-textGrow1">A collection of posts, thoughts and ramblings.</p>
+  {{#embed "patterns.combos.post-preview.base"}}
+    {{#content "image"}}
       <a href="/pages/king.html">
         <img class="u-sizeFull" src="/images/nice-picture.png">
       </a>
-    </div>
-    <div class="Grid-cell u-sm-size2of3 u-spaceItems1">
+    {{/content}}
+    {{#content "title"}}
       <a class="u-textGrow2 u-linkEnter u-textBold" href="/pages/king.html">
-        <span class="u-textPink">Down with the King</span>
+        <span class="u-textPink">
+          Down with the King
+        </span>
       </a>
-      <p>A design comp (short for comprehensive) historically in print terms was a sample that the printer would print out to get a signature on. It was proof, for the printer to get sign off on saying that everything was correct before moving into print production.</p>
-      {{#embed "patterns.components.button.base" class="Button--primary"}}
-      {{#content "content"}}
-        <a class="u-linkEnter" href="/pages/king.html">Read Article</a>
-      {{/content}}
-    {{/embed}}
-    </div>
+    {{/content}}
+    {{#content "content"}}
+      A design comp (short for comprehensive) historically in print terms was a sample that the printer would print out to get a signature on. It was proof, for the printer to get sign off on saying that everything was correct before moving into print production.
+    {{/content}}
+    {{#content "button"}}
+      {{#embed "patterns.components.button.base" class="Button--primary" href="/pages/king.html"}}
+        {{#content "content"}}
+          Read Post
+        {{/content}}
+      {{/embed}}
+    {{/content}}
+  {{/embed}}
+  <hr>
 
-    <hr>
+  {{#embed "patterns.combos.post-preview.base"}}
+    {{#content "image"}}
+      <a href="/pages/agencylife.html">
+        <img class="u-sizeFull" src="/images/fmj-full.png">
+      </a>
+    {{/content}}
+    {{#content "title"}}
+      <a class="u-textGrow2 u-linkEnter u-textBold" href="/pages/agencylife.html">
+        <span class="u-textPink">
+          #Agency Life
+        </span>
+      </a>
+    {{/content}}
+    {{#content "content"}}
+      <span class="u-textBold u-block">My time as an eROI-ian</span>
+      After having spent the majority of my working Design career in-house, I got the opportunity in 2013 to make the change to agency life, accepting a position at <a href="http://eroi.com">eROI</a>, a full service digital agency located in the heart of Old Town.
+    {{/content}}
+    {{#content "button"}}
+      {{#embed "patterns.components.button.base" class="Button--primary" href="/pages/agencylife.html"}}
+        {{#content "content"}}
+          Read Post
+        {{/content}}
+      {{/embed}}
+    {{/content}}
+  {{/embed}}
+  <hr>
 
-  </div>
+  {{#embed "patterns.combos.post-preview.base"}}
+    {{#content "image"}}
+      <a href="/pages/kungfu.html">
+        <img class="u-sizeFull" src="/images/bruce.png">
+      </a>
+    {{/content}}
+    {{#content "title"}}
+      <a class="u-textGrow2 u-linkEnter u-textBold" href="/pages/kungfu.html">
+        <span class="u-textPink">
+          Kung Fu
+        </span>
+      </a>
+    {{/content}}
+    {{#content "content"}}
+      <span class="u-textBold u-block">The Underdog, the Journey and the Self-Discipline.</span>
+      There is a lot to love about a kung fu movie... There's little plot, and tons of action. While I love the ass kicking, I think there are many other great things you can learn from kung fu.
+    {{/content}}
+    {{#content "button"}}
+      {{#embed "patterns.components.button.base" class="Button--primary" href="/pages/kungfu.html"}}
+        {{#content "content"}}
+          Read Post
+        {{/content}}
+      {{/embed}}
+    {{/content}}
+  {{/embed}}
+  <hr>
+
+  {{#embed "patterns.combos.post-preview.base"}}
+    {{#content "image"}}
+      <a href="/pages/startup-weekend.html">
+        <img class="u-sizeFull" src="/images/daka.png">
+      </a>
+    {{/content}}
+    {{#content "title"}}
+      <a class="u-textGrow2 u-linkEnter u-textBold" href="/pages/startup-weekend.html">
+        <span class="u-textPink">
+          Startup Weekend
+        </span>
+      </a>
+    {{/content}}
+    {{#content "content"}}
+      <span class="u-textBold u-block">It was the best of times, it was the worst of times...</span>
+      At the urging of a good friend, I participated in Portland's Startup Weekend. Basically it's a whole weekend where people can pitch a business idea, assemble a team, and essentially launch a business in one whole crazy weekend.
+    {{/content}}
+    {{#content "button"}}
+      {{#embed "patterns.components.button.base" class="Button--primary" href="/pages/startup-weekend.html"}}
+        {{#content "content"}}
+          Read Post
+        {{/content}}
+      {{/embed}}
+    {{/content}}
+  {{/embed}}
   <hr>
 </div>
+
