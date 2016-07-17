@@ -1,0 +1,33 @@
+---
+name: Overview
+notes: |
+  By default, icons inherit the parent element's size and text color. This means they pair well with most text-based elements, utilities and/or modifiers.
+order: -1
+---
+
+<div class="u-spaceItems1">
+  <p class="u-textShrink1">
+    {{svg "twitter" class="Icon u-textShrink1"}}
+    Smaller parent + icon
+  </p>
+
+  <p>
+    {{svg "twitter" class="Icon u-textShrink1"}}
+    Smaller icon
+  </p>
+
+  <p>
+    {{svg "twitter" class="Icon"}}
+    Default
+  </p>
+
+  <p>
+    {{svg "twitter" class="Icon u-textGrow1"}}
+    Bigger icon
+  </p>
+
+  <p class="u-textLarger">
+    {{svg "twitter" class="Icon u-textGrow1"}}
+    Bigger parent + icon
+  </p>
+</div>

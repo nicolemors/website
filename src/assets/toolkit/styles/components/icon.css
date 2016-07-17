@@ -25,3 +25,29 @@
   vertical-align: middle;
   fill: currentColor; /* 3 */
 }
+
+/**
+ * Icon fun
+ */
+
+.Icon--twitter,
+.Icon--dribbble,
+.Icon--git,
+.Icon--spotify {
+  transition: transform 100ms ease;
+}
+
+.Icon--twitter:hover,
+.Icon--twitter:focus {
+  transform: rotate(-10deg);
+}
+
+.Icon--dribbble:hover,
+.Icon--dribbble:focus {
+  transform: translateY(-10px);
+}
+
+.Icon--git:hover, .Icon--spotify:hover,
+.Icon--git:focus, .Icon--spotify:focus {
+  transform: scale(1.2, 1.2);
+}
