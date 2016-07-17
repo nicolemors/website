@@ -12,7 +12,6 @@
 :root {
   --Button-border-color: var(--color-relative);
   --Button-border-width: var(--control-stroke);
-  --Button-disabled-opacity: var(--control-disabled-opacity);
   --Button-letter-spacing: .2em;
   --Button-padding: 0.5em 1em;
   --Button-transition-duration: var(--motion-duration-lg);
@@ -179,15 +178,15 @@
 .Button--secondary,
 .Button--secondary:matches(:--enter, :active) {
   color: var(--Button-secondary-color);
-  border-color: var(--Button-secondary-color;
+  border-color: var(--Button-secondary-color);
   background-color: var(--Button-secondary-background-color);
 }
 
 .Button--secondary:matches(:--enter) {
   border-color: color(var(--Button-secondary-color) shade(5%));
-  background-color: color(var(--Button-secondary-color) l(+5%));
+  background-color: color(var(--pink-light) l(+5%));
 }
 
 .Button--secondary:active {
-  background-color: var(--Button-secondary-color) shade(10%));
+  background-color: var(--pink-light) shade(10%));
 }

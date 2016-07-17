@@ -17,16 +17,8 @@
     </a>
   </div>
   <div class="drizzle-Nav-main" id="nav-menu">
-    {{!-- Top-level pages --}}
-    <ul class="drizzle-Nav-menu">
-      {{#each (pages sortby="order")}}
-        <li>
-          {{> nav-item label=data.title}}
-        </li>
-      {{/each}}
-    </ul>
     {{!-- Element Patterns --}}
-    <h5 class="drizzle-Nav-item drizzle-u-marginTop">Elements</h5>
+    <h3 class="drizzle-Nav-item drizzle-u-marginTop u-padBottomNone u-textPink">Elements</h3>
     <ul class="drizzle-Nav-menu">
       {{#each (collections "elements" sortby="order")}}
         <li>
@@ -35,7 +27,7 @@
       {{/each}}
     </ul>
     {{!-- Component Patterns --}}
-    <h5 class="drizzle-Nav-item drizzle-u-marginTop">Components</h5>
+    <h3 class="drizzle-Nav-item u-padBottomNone u-textPink">Components</h3>
     <ul class="drizzle-Nav-menu">
       {{#each (collections "components" sortby="order")}}
         <li>
@@ -44,7 +36,7 @@
       {{/each}}
     </ul>
     {{!-- Combos --}}
-    <h5 class="drizzle-Nav-item drizzle-u-marginTop">Combos</h5>
+    <h3 class="drizzle-Nav-item u-padBottomNone u-textPink">Combos</h3>
     <ul class="drizzle-Nav-menu">
       {{#each (collections "combos" sortby="order")}}
         <li>
@@ -53,12 +45,8 @@
       {{/each}}
     </ul>
     {{!-- Pages --}}
-    <ul class="drizzle-Nav-menu">
-      <li>
-        <a class="drizzle-Nav-item" href="/pages">
-          <h5>Pages</h5>
-        </a>
-      </li>
-    </ul>
+    <a href="/pages">
+      <h3 class="drizzle-Nav-item u-padBottomNone u-textPink">Pages</h3>
+    </a>
   </div>
 </div>

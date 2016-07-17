@@ -5,5 +5,17 @@ title: Pages
 <h1>{{title}}</h1>
 
 {{#each (pages "pages" ignore="index")}}
-  {{> drizzle.page-item }}
+  {{!-- {{> drizzle.page-item }} --}}
+  <ul class="u-padLeftNone">
+      <li>
+      {{#> drizzle.labelheader tag="h4" labels=data.labels}}
+        <a href="{{@root.baseurl}}/{{url}}">{{data.title}}</a>
+      {{/drizzle.labelheader}}
+      {{#if data.notes}}
+        <div class="drizzle-Item-notes drizzle-u-rhythm">
+          {{{data.notes}}}
+        </div>
+      {{/if}}
+    </li>
+  </ul>
 {{/each}}

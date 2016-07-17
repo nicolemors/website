@@ -6,39 +6,11 @@ order: 1
 <h1>{{title}}</h1>
 
 <p>
-  This UI toolkit is a highly-modular design system for rapid web page
-  development. It contains different materials that can be assembled into more
-  complex page layouts. It includes working examples, code snippets and
-  documentation.
+  This is the pattern library for the website of <span class="u-textBold">J. Nicole Mors</span>, a Designer located in cloudy Portland Oregon. This library and site was made using <a href="http://www.cloudfour.com">Cloud Four's</a> open source pattern library tool, <a href="https://github.com/cloudfour/drizzle">Drizzle</a>.
 </p>
+{{#embed "patterns.components.button.base" class="Button--secondary u-spaceTop1" href="/"}}
+  {{#content "content"}}
+    the site
+  {{/content}}
+{{/embed}}
 
-<h3>Some Pages</h3>
-
-<dl>
-  {{#with (page "colors")}}
-    <dt>
-      <a href="{{@root.baseurl}}/{{url}}">{{data.title}}</a>
-    </dt>
-    <dd class="drizzle-u-padBottom">
-      {{{data.notes}}}
-    </dd>
-  {{/with}}
-
-  {{#with (page "docs/index")}}
-    <dt>
-      <a href="{{@root.baseurl}}/{{url}}">{{data.title}}</a>
-    </dt>
-    <dd class="drizzle-u-padBottom">
-      {{{data.notes}}}
-    </dd>
-  {{/with}}
-
-  {{#with (page "demos/index")}}
-    <dt>
-      <a href="{{@root.baseurl}}/{{url}}">{{data.title}}</a>
-    </dt>
-    <dd class="drizzle-u-padBottom">
-      {{{data.notes}}}
-    </dd>
-  {{/with}}
-</dl>

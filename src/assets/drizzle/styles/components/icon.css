@@ -1,6 +1,6 @@
 :root {
   --Icon-background: rgba(0,0,0,0.06275);
-  --Icon-hover-color: var(--color-greyLight);
+  --Icon-hover-color: var(--color-silver);
   --Icon-hover-background: color(var(--Icon-background) a(-60%));
 }
 
