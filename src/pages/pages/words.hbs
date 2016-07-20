@@ -5,6 +5,34 @@ layout: page
 
 <div class="u-pad1 u-containProse u-spaceTop1 u-spaceItems1">
   <p class="u-textGrow1">A collection of posts, thoughts and ramblings.</p>
+
+  {{#embed "patterns.combos.post-preview.base"}}
+    {{#content "image"}}
+      <a href="/pages/cloudfour.html">
+        <img class="u-sizeFull" src="/images/pink-clouds.svg">
+      </a>
+    {{/content}}
+    {{#content "title"}}
+      <a class="u-textGrow2 u-linkEnter u-textBold" href="/pages/cloudfour.html">
+        <span class="u-textPink">
+          In the Clouds
+        </span>
+      </a>
+    {{/content}}
+    {{#content "content"}}
+      <span class="u-textBold u-block">Joining the Cloud Four Team</span>
+      Joining the Cloud Four team has been super surreal. I have been a huge fan of theirs since I started designing for mobile. They are industry pioneers and leaders as well as overall good humans.
+    {{/content}}
+    {{#content "button"}}
+      {{#embed "patterns.components.button.base" class="Button--primary" href="/pages/cloudfour.html"}}
+        {{#content "content"}}
+          Read Post
+        {{/content}}
+      {{/embed}}
+    {{/content}}
+  {{/embed}}
+  <hr>
+
   {{#embed "patterns.combos.post-preview.base"}}
     {{#content "image"}}
       <a href="/pages/king.html">
