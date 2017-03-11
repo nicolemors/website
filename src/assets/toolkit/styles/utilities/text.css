@@ -177,3 +177,10 @@
   @mixin makeTestSizeUtils lg-;
 }
 
+@media (--md-viewport) {
+  .u-md-textRight {
+    text-align: right !important;
+  }
+}
+
+

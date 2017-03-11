@@ -161,10 +161,6 @@ ul {
   list-style-type: var(--list-style-default);
 }
 
-li {
-  list-style-type: none;
-}
-
 ol {
   list-style-type: none;
 }
