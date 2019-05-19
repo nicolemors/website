@@ -1,3 +1,11 @@
+/* New styles for temp homepage */
+
+.temp-index {
+  height: 100vh;
+  text-align: center;
+}
+
+
 .Navigation--link {
   font-family: var(--fancy);
   color: var(--color-white);

@@ -71,6 +71,10 @@
   color: var(--pink);
 }
 
+.u-textGreen {
+  color: var(--green);
+}
+
 .u-textbrown {
   color: var(--brown);
 }
@@ -181,6 +185,10 @@
   .u-md-textRight {
     text-align: right !important;
   }
+}
+
+.u-textLeft {
+  text-align: left;
 }
 
 

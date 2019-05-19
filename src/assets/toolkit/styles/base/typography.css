@@ -19,6 +19,7 @@
 
 body {
   font: var(--base-font); /* 1 */
+  font-weight: var(--font-weight-normal);
   word-wrap: break-word; /* 2 */
   hyphens: auto; /* 3 */
   text-size-adjust: none; /* 4 */
@@ -37,15 +38,16 @@ body {
  */
 
 h1 {
-  font-size: var(--font-size-lg);
-  font-weight: var(--font-weight-normal);
+  font-size: var(--font-size-xl);
+  letter-spacing: 1px;
+  font-weight: var(--font-weight-black);
   line-height: var(--line-height-sm);
 }
 
 h2 {
   font-size: var(--font-size-md);
   line-height: var(--line-height-sm);
-  font-weight: var(--font-weight-normal);
+  font-weight: var(--font-weight-bold);
 }
 
 h5,
@@ -79,11 +81,11 @@ h6 {
 
 a {
   text-decoration: underline;
-  color: var(--link-color);
+  color: var(--green);
 }
 
 a:matches(:active, :focus, :hover) {
-  color: var(--link-hover-color);
+  color: var(--teal);
 }
 
 /**
@@ -172,7 +174,7 @@ ol li {
 ol li:before {
   content: counter(item);
   font-weight: var(--font-weight-semibold);
-  color: var(--pink);
+  color: var(--green);
   float: left;
   margin-left: -1rem;
 }

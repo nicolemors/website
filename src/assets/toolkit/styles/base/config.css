@@ -1,9 +1,8 @@
+@import "css-modularscale";
+
 @use postcss-mixins;
 @use postcss-cssnext;
 @use postcss-inline-svg;
-
-
-@import "css-modularscale";
 
 /**
  * Misc
@@ -24,12 +23,12 @@
   --font-size-sm: calc(var(--ms0) * 1em);
   --font-size-md: calc(var(--ms1) * 1em);
   --font-size-lg: calc(var(--ms2) * 1em);
-  --font-size-xl: calc(var(--ms3) * 1em);
+  --font-size-xl: calc(var(--ms4) * 1em);
 
-  --font-family-default: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  --font-family-default: 'Montserrat', "Helvetica Neue", Helvetica, Arial, sans-serif;
   --font-family-mono: "Source Code Pro", Monaco, Consolas, "Lucida Console", "Andale Mono", monospace;
 
-  --sans-serif: 'Open Sans', helvetica, sans-serif;
+  --sans-serif: 'Montserrat', sans-serif;
   --serif: 'Playfair Display', georgia, serif;
   --fancy: 'Playfair Display SC', georgia, serif;
 
@@ -37,6 +36,7 @@
   --font-weight-normal: 400;
   --font-weight-semibold: 600;
   --font-weight-bold: 700;
+  --font-weight-black: 900;
 
   --line-height-xs: var(--ms0);
   --line-height-sm: var(--ms1);
@@ -78,9 +78,12 @@
   --pink: #CC5381;
   --brown: #441C18;
 
+  --green: #0BF997;
+  --teal: #06F9CA;
+
   /* grey pallet */
   --almost-black: #000000;
-  --grey-dark: #4A4A4A;
+  --grey-dark: #2D2D2D;
   --grey: #9A9999;
   --grey-light: #E6E3E3;
   --white: #fff;
