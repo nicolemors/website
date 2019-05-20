@@ -25,7 +25,7 @@
   --font-size-lg: calc(var(--ms2) * 1em);
   --font-size-xl: calc(var(--ms4) * 1em);
 
-  --font-family-default: 'Montserrat', "Helvetica Neue", Helvetica, Arial, sans-serif;
+  --font-family-default: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
   --font-family-mono: "Source Code Pro", Monaco, Consolas, "Lucida Console", "Andale Mono", monospace;
 
   --sans-serif: 'Montserrat', sans-serif;
