@@ -44,7 +44,7 @@
     "postcss-cssnext": "^2.5.2",
     "postcss-inline-svg": "^1.4.0",
     "postcss-mixins": "^4.0.1",
-    "prismjs": "^1.4.1",
+    "prismjs": "^1.24.0",
     "suitcss-base": "^2.0.0",
     "suitcss-components-arrange": "^1.1.1",
     "suitcss-components-button": "^5.0.0",
